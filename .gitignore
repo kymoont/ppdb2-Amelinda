@@ -1,0 +1,5 @@
+# Abaikan folder yang berisi file upload dari pengguna
+/uploads/
+
+# Abaikan file log
+*.log

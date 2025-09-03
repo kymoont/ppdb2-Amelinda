@@ -1,0 +1,142 @@
+/* File: assets/style.css */
+
+/* Import Font - Nunito (bulat dan ramah) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* Variabel Warna & Desain - Tema Lucu Gemas */
+:root {
+    --primary-color: #ff8fab; /* Soft Pink */
+    --secondary-color: #a2d2ff; /* Soft Blue */
+    --background-color: #fdfdff; /* Off-white */
+    --text-color: #4f4f4f; /* Abu-abu tua lembut */
+    --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    --border-radius: 12px; /* Lebih bulat */
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Kustomisasi Komponen Bootstrap */
+.navbar-dark.bg-primary {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 20px; /* Tombol lebih bulat */
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 143, 171, 0.5);
+    background-color: #ff7a9e;
+    border-color: #ff7a9e;
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 143, 171, 0.25);
+}
+
+/* Halaman Login & Register Khusus */
+.auth-page {
+    background: linear-gradient(120deg, #a2d2ff 0%, #ff8fab 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-page .card {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Sidebar Admin - Tema Lucu Gemas */
+.sidebar {
+    background-color: #ffffff;
+    box-shadow: 4px 0 20px rgba(170, 170, 224, 0.15);
+    border-right: 1px solid #f0f0f0;
+}
+
+.sidebar .text-center {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.sidebar a {
+    color: #555;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-left: 4px solid transparent; /* Indikator aktif */
+    transition: all 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: var(--primary-color);
+    background-color: #fff5f7;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.sidebar a.active {
+    color: var(--primary-color);
+    background-color: #fff0f3;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Admin Content Header */
+.content-header {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 20px 30px;
+    border-radius: var(--border-radius);
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.content-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+.content-header p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Tautan */
+a {
+    color: var(--primary-color);
+}
+a:hover {
+    color: #e86a8a;
+}
